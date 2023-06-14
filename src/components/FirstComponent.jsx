@@ -20,7 +20,7 @@ function FirstComponent({user,i}) {
                     {user.occupation}
                 </td>
                 <td onClick={handleUpdate} className="px-6 py-4">
-                    <button className={`p-2 bg-gray-900 text-white ${isUpdated? 'disable disabled:cursor-not-allowed disabled:opacity-70':''}`}>
+                    <button disabled={isUpdated} className={`p-2 bg-gray-900 text-white ${isUpdated? 'disabled:cursor-not-allowed disabled:opacity-70':''}`}>
                       {isUpdated? 'Updated':'Click to Update'}
                     </button>
                 </td>
